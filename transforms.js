@@ -1387,11 +1387,11 @@ const Mat4RotXYZ = function(alpha, beta, gamma) {
 	if (arguments.length !== 3) {
 		throw new TypeError("Mat4RotXYZ: Invalid number of parameters: must be 3");
 	}
-	if (typeof alpha !== "number" || typeof beta !== "number" || typeof gama !== "number") {
+	if (typeof alpha !== "number" || typeof beta !== "number" || typeof gamma !== "number") {
 		throw new TypeError("Mat4RotXYZ: Invalid parameter: must be 3 numbers");
 	}
 
-	this.mat = new Mat4RotX(alpha).mul(new Mat4RotY(beta)).mul(new Mat4RotZ(gama)).mat;
+	this.mat = new Mat4RotX(alpha).mul(new Mat4RotY(beta)).mul(new Mat4RotZ(gamma)).mat;
 };
 Mat4RotXYZ.prototype = Object.create(Mat4.prototype);
 Mat4RotXYZ.prototype.constructor = Mat4RotXYZ;
