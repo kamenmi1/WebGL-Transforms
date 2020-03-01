@@ -5,7 +5,7 @@
  *  Then it also contains objects for work with cubics, bicubics, quaternions and camera.
  *
  *  It is based on https://gitlab.com/honza.vanek/transforms
- *  These functions are used in course of computer graphics (PGRF 1-3) at FIM UHK. (Faculty of Informatics and Management at University of Hradec Kralove)
+ *  These functions are used in course of computer graphics (PGRF 1-3) at FIM UHK.(Faculty of Informatics and Management at University of Hradec Kralove)
  *
  * @version 1.2 (06/04/2019)
  * Backwards compatible with 1.1
@@ -426,7 +426,7 @@ Point3D.prototype.mul = function(m) {
 
 /**
  * Add another point to this point
- * @param {Point3D} v point Point3D to be added
+ * @param {Point3D} p point Point3D to be added
  * @return {Point3D}  new Point3D instance
  * @throws {TypeError} If v is not a Point3D
  */
@@ -440,7 +440,7 @@ Point3D.prototype.add = function(p) {
 
 /**
  * Subtract another point from this point
- * @param {Point3D} v point Point3D to be subtracted
+ * @param {Point3D} p point Point3D to be subtracted
  * @return {Point3D}  new Point3D instance
  * @throws {TypeError} If v is not a Point3D
  */
@@ -754,7 +754,7 @@ Quat2.fromRotationMatrix = function(mat) {
 			k = (mat.mat[1][0] - mat.mat[0][1]) / (4 * r);
 		} else {
 			const indices = [1, 2, 0];
-			const a = 0;
+			let a = 0;
 
 			if (mat.mat[1][1] > mat.mat[0][0]) a = 1;
 			if (mat.mat[2][2] > mat.mat[a][a]) a = 2;
