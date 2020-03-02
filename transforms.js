@@ -5,9 +5,10 @@
  *  Then it also contains objects for work with cubics, bicubics, quaternions and camera.
  *
  *  It is based on https://gitlab.com/honza.vanek/transforms
- *  These functions are used in course of computer graphics (PGRF 1-3) at FIM UHK.(Faculty of Informatics and Management at University of Hradec Kralove)
+ *  These functions are used in course of computer graphics (PGRF 1-3) at FIM UHK.
+ *  (Faculty of Informatics and Management at University of Hradec Kralove)
  *
- * @version 1.2 (06/04/2019)
+ * @version 1.2.1 (2020/03/02)
  * Backwards compatible with 1.1
  */
 
