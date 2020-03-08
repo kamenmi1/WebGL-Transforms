@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 describe("ZeroArray", () => {
 
@@ -1105,24 +1105,24 @@ describe("Mat4", () => {
 	});
 
 	it("constructor works correctly with Mat4 as parameter", () => {
-		let m3 = new Mat4(m1);
+		let m2 = new Mat4(m1);
 
-		expect(m1.mat[0][0]).toBe(4);
-		expect(m1.mat[0][1]).toBe(-2);
-		expect(m1.mat[0][2]).toBe(3);
-		expect(m1.mat[0][3]).toBe(4);
-		expect(m1.mat[1][0]).toBe(1);
-		expect(m1.mat[1][1]).toBe(2);
-		expect(m1.mat[1][2]).toBe(-3);
-		expect(m1.mat[1][3]).toBe(-1);
-		expect(m1.mat[2][0]).toBe(6);
-		expect(m1.mat[2][1]).toBe(3);
-		expect(m1.mat[2][2]).toBe(2);
-		expect(m1.mat[2][3]).toBe(-3);
-		expect(m1.mat[3][0]).toBe(0);
-		expect(m1.mat[3][1]).toBe(-1);
-		expect(m1.mat[3][2]).toBe(7);
-		expect(m1.mat[3][3]).toBe(1);
+		expect(m2.mat[0][0]).toBe(4);
+		expect(m2.mat[0][1]).toBe(-2);
+		expect(m2.mat[0][2]).toBe(3);
+		expect(m2.mat[0][3]).toBe(4);
+		expect(m2.mat[1][0]).toBe(1);
+		expect(m2.mat[1][1]).toBe(2);
+		expect(m2.mat[1][2]).toBe(-3);
+		expect(m2.mat[1][3]).toBe(-1);
+		expect(m2.mat[2][0]).toBe(6);
+		expect(m2.mat[2][1]).toBe(3);
+		expect(m2.mat[2][2]).toBe(2);
+		expect(m2.mat[2][3]).toBe(-3);
+		expect(m2.mat[3][0]).toBe(0);
+		expect(m2.mat[3][1]).toBe(-1);
+		expect(m2.mat[3][2]).toBe(7);
+		expect(m2.mat[3][3]).toBe(1);
 	});
 
 	it("constructor works correctly w/o parameters", () => {
@@ -1241,16 +1241,16 @@ describe("Mat4", () => {
 	});
 
 	it("toMat3 prototype works as expected", () => {
-		let m3 = m1.toMat3();
-		expect(m1.mat[0][0]).toBe(4);
-		expect(m1.mat[0][1]).toBe(-2);
-		expect(m1.mat[0][2]).toBe(3);
-		expect(m1.mat[1][0]).toBe(1);
-		expect(m1.mat[1][1]).toBe(2);
-		expect(m1.mat[1][2]).toBe(-3);
-		expect(m1.mat[2][0]).toBe(6);
-		expect(m1.mat[2][1]).toBe(3);
-		expect(m1.mat[2][2]).toBe(2);
+		let m2 = m1.toMat3();
+		expect(m2.mat[0][0]).toBe(4);
+		expect(m2.mat[0][1]).toBe(-2);
+		expect(m2.mat[0][2]).toBe(3);
+		expect(m2.mat[1][0]).toBe(1);
+		expect(m2.mat[1][1]).toBe(2);
+		expect(m2.mat[1][2]).toBe(-3);
+		expect(m2.mat[2][0]).toBe(6);
+		expect(m2.mat[2][1]).toBe(3);
+		expect(m2.mat[2][2]).toBe(2);
 	});
 
 	it("c function returns itself", () => {
